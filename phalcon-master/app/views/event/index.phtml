@@ -1,0 +1,54 @@
+<?php
+  $event = new EventController;
+  $data = json_decode($event->tableAction());
+?>
+
+<div class="row">
+  <div class="col-sm">
+    <!--button type="submit" class="btn btn-info" href="add">Add</button-->
+    <form action="" method="post" enctype="multipart/form-data">
+      <a href="add" class="btn btn-info">Add</a>
+      <br><br>
+      <div class="container container-form">
+        <div class="panel panel-primary">
+          <div class="panel-body">
+            <table data-toggle="table" class="table table-hover table-dark">
+              <thead>
+                <tr>
+                  <th data-field="id"> ลำดับ </th>
+                  <th data-field="event_name"> ชื่อกิจกรรม</th>
+                  <th data-field="picture"></th>
+                  <th data-field="date"><center> วันที่ </center></th>
+                  <th data-field="edit"></th>
+                  <th data-field="delete"></th>
+                </tr>
+              </thead>
+              <?php
+                $i = 1;
+                if(isset($data)){
+                  foreach ($data as $idx) {
+                  // Output a row
+                    echo "<tr>";
+                    echo "<td>$i</td>";
+                    echo "<td>$idx->event_name</td>";
+              ?>
+              <td align="center"><img style="height:40px" src="<?php echo $this->url->getBaseUri().'public/img/'.$idx->picture; ?>"></td>
+              <?php
+                    $date=date_create($idx->date);
+                    echo "<td align='center'>" . date_format($date,"d - M - Y") ."</td>";
+              ?>
+              <td align="center"><a class="btn btn-info" href="edit?id=<?php echo $idx->id;?>">Edit</a></td>
+              <td align="center"><a class="btn btn-danger" href="delete?id=<?php echo $idx->id;?>">Delete</a></td>
+              <?php
+                  $i++;
+                  }
+                }
+              ?>
+            </table>         
+          </div>
+        </div>
+      </div>
+      <a href="<?php echo $this->url->getBaseUri(); ?>" class="btn btn-warning">Back</a>
+    </form>
+  </div>
+</div>

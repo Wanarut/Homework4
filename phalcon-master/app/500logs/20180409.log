@@ -1,0 +1,16 @@
+[Mon, 09 Apr 18 16:28:16 +0700][ERROR] [0]: Syntax error, unexpected token <, near to 'br /><b>Notice</b>:  Trying to get property 'id' of non-object in <b>C:\xampp\htdocs\Homework3\phalcon-master\app\views\add\index.phtml</b> on line <b>6</b><br /> LIMIT :APL0:', when parsing: SELECT [Event].* FROM [Event] WHERE <br /><b>Notice</b>:  Trying to get property 'id' of non-object in <b>C:\xampp\htdocs\Homework3\phalcon-master\app\views\add\index.phtml</b> on line <b>6</b><br /> LIMIT :APL0: (212)
+
+[Mon, 09 Apr 18 16:29:56 +0700][ERROR] [0]: Syntax error, unexpected token <, near to 'br /><b>Notice</b>:  Trying to get property 'id' of non-object in <b>C:\xampp\htdocs\Homework3\phalcon-master\app\views\add\index.phtml</b> on line <b>6</b><br /> LIMIT :APL0:', when parsing: SELECT [Event].* FROM [Event] WHERE <br /><b>Notice</b>:  Trying to get property 'id' of non-object in <b>C:\xampp\htdocs\Homework3\phalcon-master\app\views\add\index.phtml</b> on line <b>6</b><br /> LIMIT :APL0: (212)
+
+[Mon, 09 Apr 18 16:30:07 +0700][ERROR] [0]: Syntax error, unexpected token <, near to 'br /><b>Notice</b>:  Trying to get property 'id' of non-object in <b>C:\xampp\htdocs\Homework3\phalcon-master\app\views\add\index.phtml</b> on line <b>6</b><br /> LIMIT :APL0:', when parsing: SELECT [Event].* FROM [Event] WHERE <br /><b>Notice</b>:  Trying to get property 'id' of non-object in <b>C:\xampp\htdocs\Homework3\phalcon-master\app\views\add\index.phtml</b> on line <b>6</b><br /> LIMIT :APL0: (212)
+
+[Mon, 09 Apr 18 16:36:34 +0700][ERROR] [0]: Syntax error, unexpected token <, near to 'br /><b>Notice</b>:  Trying to get property 'id' of non-object in <b>C:\xampp\htdocs\Homework3\phalcon-master\app\views\add\index.phtml</b> on line <b>6</b><br /> LIMIT :APL0:', when parsing: SELECT [Event].* FROM [Event] WHERE <br /><b>Notice</b>:  Trying to get property 'id' of non-object in <b>C:\xampp\htdocs\Homework3\phalcon-master\app\views\add\index.phtml</b> on line <b>6</b><br /> LIMIT :APL0: (212)
+
+[Mon, 09 Apr 18 22:32:54 +0700][ERROR] [0]: Syntax error, unexpected token LIMIT, near to ' :APL0:', when parsing: SELECT [Event].* FROM [Event] WHERE id= LIMIT :APL0: (52)
+
+[Mon, 09 Apr 18 22:34:13 +0700][ERROR] [0]: Syntax error, unexpected token LIMIT, near to ' :APL0:', when parsing: SELECT [Event].* FROM [Event] WHERE id= LIMIT :APL0: (52)
+
+[Mon, 09 Apr 18 22:53:00 +0700][ERROR] [0]: Wrong number of parameters
+
+[Mon, 09 Apr 18 22:53:47 +0700][ERROR] [0]: Wrong number of parameters
+

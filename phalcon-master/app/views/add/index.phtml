@@ -1,0 +1,43 @@
+<div class="row">
+  <div class="col-sm">
+  </div>
+  <div class="col-sm">
+    <form action="" method="post" enctype="multipart/form-data">
+	    <input type="hidden"  name="eventId" value="<?php echo $event->id;?>">
+      <div class="form-group">
+        <label>ชื่อกิจกรรม</label>
+        <input type="text" name="name" class="form-control" id="name" placeholder="กิจกรรมอะไร" required>
+      </div>
+  
+      <div class="form-group">
+        <label>วันที่</label>
+          <input type="date" name="date" data-provide="datepicker" class="form-control" id="date" required> 
+      </div>
+
+      <div class="form-group">
+        <label>รายละเอียด</label>
+        <textarea rows="5" name="detail" class="form-control" id="detail" placeholder="เกิดอะไรขึ้น?" required></textarea>
+      </div>
+  
+      <div class="form-group">
+        <label>ภาพกิจกรรม</label>
+        <div class="custom-file">
+          <input type="file" name="photo"  class="custom-file-input"  >
+          <label class="custom-file-label" >Choose file</label>
+        </div>
+      </div>
+      <center>
+      <?php if(isset($event->picture) && $event->picture!=''){?>
+        <div class="form-group">  
+          <img style="width:100px; height:100px" src="<?php echo $this->url->getBaseUri().'public/img/'.$event->picture; ?>" class="img-thumbnail">
+        </div>
+      <?php }?>
+      <button type="submit" class="btn btn-info">Submit</button>
+  
+      <a href="event" class="btn btn-warning">Back</a>
+      </center>
+    </form>
+  </div>
+  <div class="col-sm">
+  </div>
+</div>
