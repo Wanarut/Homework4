@@ -42,7 +42,7 @@ class ProfileController extends ControllerBase {
 	}
 	else
 		$profileId = $this->session->get('memberAuthen');
-	$profile = user::findFirst($profileId);
+	$profile = User::findFirst($profileId);
 	$this->view->profile = $profile;
   }
 
