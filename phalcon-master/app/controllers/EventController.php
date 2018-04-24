@@ -12,8 +12,8 @@ class EventController extends ControllerBase {
 
    public function tableAction(){
 	$servername = "localhost";
-	$username = "root";
-	$password = "";
+	$username = "acequeasy";
+	$password = "8Zwq6fYJBFV9RtNn";
 	$dbname = "kampang";
 
 	// Create connection
