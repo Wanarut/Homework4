@@ -32,7 +32,11 @@
                     echo "<td>$i</td>";
                     echo "<td>$idx->event_name</td>";
               ?>
-              <td align="center"><img style="height:40px" src="<?php echo $this->url->getBaseUri().'public/img/'.$idx->picture; ?>"></td>
+              <td align="center">     
+              <?php if($idx->picture!=''){?>
+                  <img style="height:40px" src="<?php echo $this->url->getBaseUri().'public/img/'.$idx->picture; ?>">
+              <?php }?>
+              </td>
               <?php
                     $date=date_create($idx->date);
                     echo "<td align='center'>" . date_format($date,"d - M - Y") ."</td>";
