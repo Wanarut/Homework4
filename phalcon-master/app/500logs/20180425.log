@@ -1,0 +1,10 @@
+[Wed, 25 Apr 18 10:22:53 +0700][ERROR] [23000]: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin@aqc.com' for key 'email'
+
+[Wed, 25 Apr 18 10:37:10 +0700][ERROR] [0]: Scanning error before 'aqc.com LIMIT :A...' when parsing: SELECT [User].* FROM [User] WHERE admin@aqc.com LIMIT :APL0: (60)
+
+[Wed, 25 Apr 18 10:37:43 +0700][ERROR] [0]: Scanning error before 'aqc.com LIMIT :A...' when parsing: SELECT [User].* FROM [User] WHERE admin@aqc.com LIMIT :APL0: (60)
+
+[Wed, 25 Apr 18 10:39:31 +0700][ERROR] [23000]: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin@aqc.com' for key 'email'
+
+[Wed, 25 Apr 18 10:52:35 +0700][ERROR] [23000]: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@aqc.com' for key 'email'
+

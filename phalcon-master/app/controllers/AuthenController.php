@@ -60,15 +60,22 @@ class AuthenController extends ControllerBase{
       $email = trim($this->request->getPost('email')); // รับค่าจาก form
       $pass = trim($this->request->getPost('password')); // รับค่าจาก form
       $firstname = trim($this->request->getPost('firstname')); // รับค่าจาก form
-      
-      $member = new User();
-      $member->username = $email;
-      $member->password = $this->security->hash($pass);
-      $member->first_name = $firstname;
-      $member->save();
-      $this->response->redirect('authen');
-      
+
+      $member = User::findFirst("username = '$email'");  // ค้นหาชื่อผู้ใช้
+      if($member){
+        echo '<script language="javascript">';
+        echo 'alert("Email is already in use!")';
+        echo '</script>';
+        $this->response->redirect('authen/signUp');
+      }else{
+        $member = new User();
+        $member->username = $email;
+        $member->password = $this->security->hash($pass);
+        $member->first_name = $firstname;
+        $member->save();
+        $this->response->redirect('authen');
       }
+    }
   }
   
   public function removeSession(){ // การลบ session
@@ -78,7 +85,7 @@ class AuthenController extends ControllerBase{
     
   public function signOutAction(){
 	  $this->removeSession();
-	  $this->response->redirect('authen');   
+	  $this->response->redirect('.');   
   }
  
 }

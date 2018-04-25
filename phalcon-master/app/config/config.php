@@ -10,8 +10,8 @@ return new \Phalcon\Config([
     'database' => [
         'adapter'     => 'Mysql', // รูปแบบการเชื่อมต่อ
         'host'        => 'localhost', // ที่อยู่ที่ต้องการเชื่อมต่อฐานข้อมูล
-        'username'    => 'acequeasy', // ชื่อผู้ใช้เข้า phpmyadmin
-        'password'    => '8Zwq6fYJBFV9RtNn', // รหัสผ่านเข้า phpmyadmin
+        'username'    => 'root', // ชื่อผู้ใช้เข้า phpmyadmin
+        'password'    => '', // รหัสผ่านเข้า phpmyadmin
         'dbname'      => 'kampang', // ชื่อ database
         'charset'     => 'utf8', // string encode เมื่อได้รับการแสดงผล
     ],

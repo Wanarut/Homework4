@@ -36,7 +36,7 @@ class ProfileController extends ControllerBase {
 	  	$profileObj->username = $email;
 	  	$profileObj->first_name = $firstname;
       	if($photoUpdate != ''){
-			$eventObj->picture = $photoUpdate;
+			$profileObj->picture = $photoUpdate;
 		}
 		$profileObj->save();
 	}
